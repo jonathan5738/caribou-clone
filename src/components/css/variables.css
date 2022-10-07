@@ -1,4 +1,8 @@
 :root {
     --main-color:#0075E3;
+    --green-color: #008765;
     --main-font:'Roboto', sans-serif;
+    --main-dark-color:#212529;
+    --medium-dark-color:#343a40;
+    --light-dark-color:#495057;
 }
