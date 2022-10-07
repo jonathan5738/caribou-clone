@@ -34,3 +34,13 @@
     align-items: center;
     gap: 1rem;
 }
+@media (max-width: 678px){
+    .hero-section {
+        height: 50vh;
+    }
+}
+@media (max-width: 537px){
+    .hero-section-content h2{
+        font-size: 3rem;
+    }
+}

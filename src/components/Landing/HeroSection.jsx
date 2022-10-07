@@ -11,11 +11,6 @@ function HeroSection() {
              <p>You could save $100+ a month on your car loan*</p>
              <Link to="#" className='check-rate'><div className="check-rate-content">check your rate for free < BsFillArrowRightCircleFill/> </div></Link>
         </div>
-        <div className="advantages">
-            <p>No impact to your credit score</p>
-            <p>No hidden fees</p>
-            <p>No SSN required ++</p>
-        </div>
     </section>
   )
 }
