@@ -1,0 +1,16 @@
+.bannier-section {
+    background-image:linear-gradient(#333333ad, #33333318), url('https://images.ctfassets.net/xusdw2szt8em/1briKJeYGvIEWi78BRKLim/aee847f2633021d00042d6dab20a1376/road-sunset-2xhidpi.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 2rem;
+    border-radius: 10px;
+}
+.bannier-section-content {
+    padding: 10rem 0;
+    text-align: center;
+    color: #fff;
+}
+.bannier-section-content h2 {
+    font-size: 5rem;
+
+}

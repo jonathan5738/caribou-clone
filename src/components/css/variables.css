@@ -1,8 +1,10 @@
 :root {
     --main-color:#0075E3;
     --green-color: #008765;
-    --main-font:'Roboto', sans-serif;
+    --main-font:'Montserrat', sans-serif;
     --main-dark-color:#212529;
     --medium-dark-color:#343a40;
     --light-dark-color:#495057;
+    --desk-padd: 0 10rem;
+    --mobile-padd: 0 2rem;
 }
