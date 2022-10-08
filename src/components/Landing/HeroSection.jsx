@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsFillArrowRightCircleFill } from "react-icons/bs"
-import '../css/heroSection/HeroSection.css'
+import '../css/Landing/HeroSection.css'
 function HeroSection() {
   return (
     <section className="hero-section">

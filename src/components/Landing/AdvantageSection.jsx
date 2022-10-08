@@ -1,6 +1,6 @@
 import React from 'react'
 import { BiCheckCircle } from "react-icons/bi"
-import '../css/AdvantageSection/AdvantageSection.css'
+import '../css/Landing/AdvantageSection.css'
 function AdvantageSection() {
   return (
     <div className="advantages">
