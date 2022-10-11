@@ -1,5 +1,6 @@
 import React from 'react'
 import { FiAward } from "react-icons/fi"
+import { motion } from 'framer-motion'
 import Card from '../utils/Card'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { Navigation, Pagination, A11y } from 'swiper';
@@ -10,6 +11,10 @@ import 'swiper/css/pagination';
 import '../css/Landing/Testimonial.css'
 
 function Testimonial() {
+  const variants = {
+    initial: {opacity: 0, scale: .7},
+    animation: {opacity: 1, scale: 1}
+ }
   const content = `Lorem ipsum dolor sit amet consectetur adipisicing elit.
   Aspernatur impedit totam natus, provident
    sapiente sunt unde fuga molestiae veritatis
@@ -17,7 +22,7 @@ function Testimonial() {
   dolore, est beatae aut fuga asperiores.`
   return (
     <section className="testimonial">
-        <div className="testimonial-section1">
+        <motion.div className="testimonial-section1">
             <span className="title-span">CUSTOMER STORIES</span>
             <h2>75,000+ happy drivers <br /> with more cash in their <br /> wallets</h2>
             <div className="testimonial-section1-flex">
@@ -29,8 +34,13 @@ function Testimonial() {
                 </div>
                 <p>4 star reviews from our clients on <span className="site">Trustpilot</span></p>
             </div>
-        </div>
-        <div className="testimonial-section2">
+        </motion.div>
+        <motion.div className="testimonial-section2"
+           variants={variants}
+           initial='initial'
+           whileInView='animation'
+           transition={{ease: 'easeInOut', duration: .3}}
+        >
             <Swiper className="slider-container"
                   modules={[Navigation, Pagination, A11y]}
                   breakpoints={{ 828: {slidesPerView: 3}}}
@@ -56,7 +66,7 @@ function Testimonial() {
                       />
                 </SwiperSlide>
                </Swiper>
-        </div>
+        </motion.div>
     </section>
   )
 }

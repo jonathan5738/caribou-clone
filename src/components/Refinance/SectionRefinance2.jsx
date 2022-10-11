@@ -1,9 +1,19 @@
 import React from 'react'
 import {FiDivide, FiClock, FiTrendingUp} from 'react-icons/fi'
+import { motion } from 'framer-motion'
 import '../css/Refinance/SectionRefinance2.css'
 function SectionRefinance2() {
+    const variants = {
+        initial: {opacity: 0, scale: .7},
+        animation: {opacity: 1, scale: 1}
+    }
   return (
-     <section className="refinance-section2">
+     <motion.section className="refinance-section2"
+        variants={variants}
+        initial='initial'
+        whileInView='animation'
+        transition={{ease: 'easeInOut', duration: .3}}
+     >
          <div className="refinance-section2-text">
             <h2>Fast and easy auto refinance</h2>
          </div>
@@ -30,7 +40,7 @@ function SectionRefinance2() {
                      customers save an average of over $100/month on their car payments.</p>
              </div>
          </div>
-     </section>
+     </motion.section>
   )
 }
 

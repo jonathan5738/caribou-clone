@@ -1,16 +1,31 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import {FiDivide, FiMessageCircle, FiLayers, FiZap} from 'react-icons/fi'
 import '../css/Landing/BenefitSection.css'
 function BenefitSection() {
+  const variants = {
+    initial: {opacity: 0, scale: .7},
+    animation: {opacity: 1, scale: 1}
+ }
   return (
     <section className="benefit-section">
-        <div className="benefit-section-content">
+        <motion.div className="benefit-section-content"
+           variants={variants}
+           initial='initial'
+           whileInView='animation'
+           transition={{ease: 'easeInOut', duration: .3}}
+        >
             <span className="title-span">What sets us apart</span>
             <h2>Tech to unlock low rates <br />
              people to make the process <br />
              easy</h2>
-        </div>
-        <div className="benefit-section-grid">
+        </motion.div>
+        <motion.div className="benefit-section-grid"
+           variants={variants}
+           initial='initial'
+           whileInView='animation'
+           transition={{ease: 'easeInOut', duration: .3}}
+        >
              <div className="benefit-card">
                 <FiDivide size={40} color={'#008765'}/>
                  <h3>Competitive rates</h3>
@@ -41,7 +56,7 @@ function BenefitSection() {
                      for refinancing and car insurance through Caribou.</p>
              </div>
 
-        </div>
+        </motion.div>
     </section>
   )
 }

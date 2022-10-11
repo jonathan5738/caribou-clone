@@ -1,7 +1,12 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import '../css/Refinance/SectionRefinance4.css'
 
 function SectionRefinance4() {
+    const variants = {
+        initial: {opacity: 0, scale: .7},
+        animation: {opacity: 1, scale: 1}
+    }
   return (
     <section className="section-refinance4">
          <div className="section-refinance4-text">
@@ -9,7 +14,12 @@ function SectionRefinance4() {
              <h2>Why stop there?</h2>
              <p>Refinancing through us can unlock add-on products to help you protect the value of your car.</p>
          </div>
-         <div className="section-refinance4-container">
+         <motion.div className="section-refinance4-container"
+            variants={variants}
+            initial='initial'
+            whileInView='animation'
+            transition={{ease: 'easeInOut', duration: .3}}
+         >
              <div className="section-refinance4-flex">
                     <div className="section-refinance4-card">
                         <h3>Auto Refinance</h3>
@@ -59,7 +69,7 @@ function SectionRefinance4() {
                     </div>
              </div>
 
-         </div>
+         </motion.div>
     </section>
   )
 }
