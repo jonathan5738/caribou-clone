@@ -61,7 +61,7 @@ function Navbar() {
              </div>
              <div className="mobile-menu-links">
                     <ul className='menu-mobile'>
-                        <li className="menu-item-mobile"><Link to="#">Refinance</Link></li>
+                        <li className="menu-item-mobile"><Link to="/refinance">Refinance</Link></li>
                         <li className="menu-item-mobile"><Link to="#">Auto Insurance</Link></li>
                         <li className="menu-item-mobile"><Link to="#">About Us</Link></li>
                         <li className="menu-item-mobile">
