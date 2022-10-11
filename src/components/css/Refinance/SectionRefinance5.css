@@ -1,0 +1,54 @@
+.section-refinance5-container {
+    padding: var(--desk-padd);
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr;
+    column-gap: 6rem;
+    margin-bottom: 10rem;
+    margin-top: 20rem;
+}
+.section-refinance5-img img {
+    width: 100%;
+    border-radius: 10px;
+    height: 558px;
+}
+.section-refinance5-text h2 {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+.quote {
+    display: inline-block;
+    color: var(--green-color);
+}
+@media(max-width: 1047px){
+    .section-refinance5-container {
+        align-items: center;
+    }
+    .section-refinance5-text h2 {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 991px){
+    .section-refinance5-container {
+        grid-template-columns: 1.4fr 1fr;
+        column-gap: 4rem;
+    }
+    .section-refinance5-text h2 {
+        font-size: 3rem;
+    }
+}
+@media (max-width: 849px){
+    .section-refinance5-container {
+        padding: var(--mobile-padd);   
+    }
+}
+@media(max-width: 653px){
+    .section-refinance5-container {
+        margin-top: 50rem;
+        grid-template-columns: 1fr;
+    }
+    .section-refinance5-img img {
+        width: 100%;
+        border-radius: 10px;
+        height: 380px;
+    }
+}

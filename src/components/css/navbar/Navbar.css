@@ -6,6 +6,10 @@
     padding: 0 10rem;
     color: var(--medium-dark-color);
 }
+.logo {
+    text-decoration: none;
+    color: #363636;
+}
 .phone-number {
     color: var(--green-color);
 }

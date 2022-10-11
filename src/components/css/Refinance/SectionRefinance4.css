@@ -1,0 +1,63 @@
+.section-refinance4 {
+    margin-top: 15rem;
+    margin-bottom: 10rem;
+}
+.section-refinance4-text {
+    text-align: center;
+    margin-bottom: 8rem;
+}
+.section-refinance4-text h2 {
+    font-size: 5rem;
+    padding: 0; margin: 0;
+}
+.section-refinance4-container {
+    background-image: url('https://images.ctfassets.net/xusdw2szt8em/4yPEcN8pnWFjoNluNOXrpR/b0b91a4e1d9af0b4009749bb14433c0a/CarArial2x.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.section-refinance4-flex {
+    padding: var(--desk-padd);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+}
+.section-refinance4-card {
+    width: 30%;
+    padding: 1em 2em;
+    border-radius: 10px;
+    box-shadow: 0 3rem 6rem 0 #9b9b9b3a;
+    background-color: #fff;
+    
+}
+.section-refinance4-card h3 {
+    font-size: 1.4rem;
+}
+.section-refinance4-card p {
+    font-size: 1.3rem;
+}
+
+@media(max-width: 712px){
+    .section-refinance4-flex {
+        padding: var(--mobile-padd);
+    }
+    .section-refinance4-card {
+        width: 40%;
+    }
+}
+@media(max-width: 529px){
+    .section-refinance4-card {
+        width: 45%;
+    }
+}
+@media(max-width: 390px){
+    .section-refinance4-flex {
+        margin-bottom: 0;
+    }
+    .section-refinance4-card {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}

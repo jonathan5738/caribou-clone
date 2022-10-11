@@ -6,6 +6,8 @@ import Section3 from './Section3'
 import DiscoverSection from './DiscoverSection'
 import Testimonial from './Testimonial'
 import BannerSection from './BannerSection'
+import BenefitSection from './BenefitSection'
+import BannierSection2 from './BannierSection2'
 
 function Landing() {
   return (
@@ -17,6 +19,8 @@ function Landing() {
       <DiscoverSection/>
       <Testimonial/>
       <BannerSection/>
+      <BenefitSection/>
+      <BannierSection2/>
     </>
   )
 }

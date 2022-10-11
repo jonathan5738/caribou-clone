@@ -1,0 +1,39 @@
+.refinance-section1 {
+    display: grid;
+    grid-template-columns: 2fr 1.4fr;
+    padding: var(--desk-padd);
+    gap: 3rem;
+    margin-top: 5rem;
+}
+.refinance-section1-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+.refinance-section1-text h2 {
+    font-size: 6rem;
+    padding: 0;
+    margin: 0;
+}
+@media (max-width: 1138px){
+    .refinance-section1-text h2 {
+        font-size: 5rem;
+    }
+}
+@media(max-width: 1006px){
+    /* .refinance-section1 {
+        grid-template-columns: 1fr 1fr;
+    } */
+    .refinance-section1-text h2 {
+        font-size: 4rem;
+    }
+}
+@media(max-width: 908px){
+    .refinance-section1 {
+        padding: var(--mobile-padd);
+    }
+}
+@media(max-width: 718px){
+    .refinance-section1 {
+        grid-template-columns: 1fr;
+    }
+}

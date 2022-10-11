@@ -37,8 +37,6 @@ function Testimonial() {
                   spaceBetween={50}
                   slidesPerView={1}
                   pagination={true}
-                  onSlideChange={() => console.log('slide change')}
-                  onSwiper={(swiper) => console.log(swiper)}
                >
                 <SwiperSlide className='slider'>
                     <Card content={content} author={'alice smith'}

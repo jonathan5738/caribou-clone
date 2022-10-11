@@ -35,7 +35,7 @@ function Navbar() {
         <nav className="navbar">
             <Link to="/" className='logo'>Logo</Link>
             <ul className="menu">
-                <li className="menu-item"><Link to="#">Refinance</Link></li>
+                <li className="menu-item"><Link to="/refinance">Refinance</Link></li>
                 <li className="menu-item"><Link to="#">Auto Insurance</Link></li>
                 <li className="menu-item"><Link to="#">About Us</Link></li>
                 <li className="menu-item"><Link to="#">Resources <FiChevronDown/></Link></li>

@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     padding: 10rem 0 14rem 0 ;
+    text-align: center;
 }
 .hero-section-content h2 {
     font-size: 5rem;
@@ -35,10 +36,15 @@
     gap: 1rem;
 }
 @media (max-width: 678px){
-    
+    .hero-section-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 @media (max-width: 537px){
     .hero-section-content h2{
         font-size: 3rem;
     }
+}
+@media (max-width: 417px){
 }
